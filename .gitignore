@@ -1,4 +1,4 @@
 .gitignore
 build/
 .settings/*
-./.idea
+.idea/*
