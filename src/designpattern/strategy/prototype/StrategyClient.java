@@ -1,4 +1,4 @@
-package designpattern.strategy;
+package designpattern.strategy.prototype;
 
 /**
  * 客户端使用策略

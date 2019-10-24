@@ -1,4 +1,4 @@
-package designpattern.strategy;
+package designpattern.strategy.prototype;
 
 /**
  * 上下文
