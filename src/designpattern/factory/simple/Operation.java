@@ -2,9 +2,8 @@ package designpattern.factory.simple;
 
 /**
  * 操作类抽象类
- * 
- * @author liu yuning
  *
+ * @author liu yuning
  */
 public abstract class Operation {
     public double numberA;

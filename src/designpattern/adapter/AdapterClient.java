@@ -2,16 +2,15 @@ package designpattern.adapter;
 
 /**
  * 适配器客户端
- * 
- * @author liu yuning
  *
+ * @author liu yuning
  */
 public class AdapterClient {
 
     public static void main(String[] args) {
-	Target target;
+        Target target;
 
-	target = new Adapter();
-	target.request();
+        target = new Adapter();
+        target.request();
     }
 }

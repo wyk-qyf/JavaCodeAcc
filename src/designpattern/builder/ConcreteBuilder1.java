@@ -2,9 +2,8 @@ package designpattern.builder;
 
 /**
  * 具体建造者类
- * 
- * @author liu yuning
  *
+ * @author liu yuning
  */
 public class ConcreteBuilder1 extends Builder {
 
@@ -12,17 +11,17 @@ public class ConcreteBuilder1 extends Builder {
 
     @Override
     public void buildPartA() {
-	product.add("部件A");
+        product.add("部件A");
     }
 
     @Override
     public void buildPartB() {
-	product.add("部件B");
+        product.add("部件B");
     }
 
     @Override
     public Product getBuildResult() {
-	return product;
+        return product;
     }
 
 }

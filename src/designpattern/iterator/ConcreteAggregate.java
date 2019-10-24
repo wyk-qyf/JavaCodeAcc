@@ -5,10 +5,9 @@ import java.util.List;
 
 /**
  * 具体聚集类
- * 
- * @author liu yuning
  *
  * @param <T>
+ * @author liu yuning
  */
 public class ConcreteAggregate<T> implements Aggregate<T> {
 
@@ -16,20 +15,20 @@ public class ConcreteAggregate<T> implements Aggregate<T> {
 
     @Override
     public Iterator<T> createIterator() {
-	// TODO Auto-generated method stub
-	return new ConcreteIterator<T>(this);
+        // TODO Auto-generated method stub
+        return new ConcreteIterator<T>(this);
     }
 
     public int count() {
-	return items.size();
+        return items.size();
     }
 
     public T getItems(int index) {
-	return items.get(index);
+        return items.get(index);
     }
 
     public void setItems(T item) {
-	items.add(item);
+        items.add(item);
     }
 
 }

@@ -2,9 +2,8 @@ package designpattern.proxy;
 
 /**
  * 代理类
- * 
- * @author liu yuning
  *
+ * @author liu yuning
  */
 public class Proxy implements Subject {
 
@@ -12,12 +11,12 @@ public class Proxy implements Subject {
     Subject subject;
 
     public Proxy() {
-	subject = new RealSubject();
+        subject = new RealSubject();
     }
 
     @Override
     public void request() {
-	subject.request();
+        subject.request();
     }
 
 }

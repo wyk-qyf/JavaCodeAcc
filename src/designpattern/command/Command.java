@@ -4,20 +4,19 @@ import java.util.List;
 
 /**
  * 用来声明执行操作的接口
- * 
- * @author liu yuning
  *
+ * @author liu yuning
  */
 public abstract class Command {
 
     protected List<Reciever> recievers;
 
     public Command(List<Reciever> recievers) {
-	this.recievers = recievers;
+        this.recievers = recievers;
     }
 
     public void addRecievers(Reciever reciever) {
-	this.recievers.add(reciever);
+        this.recievers.add(reciever);
     }
 
     public abstract void execute();
@@ -28,14 +27,14 @@ public abstract class Command {
 class ConcreteCommand extends Command {
 
     public ConcreteCommand(List<Reciever> recievers) {
-	super(recievers);
+        super(recievers);
     }
 
     @Override
     public void execute() {
-	for (Reciever reciever : recievers) {
-	    reciever.action();
-	}
+        for (Reciever reciever : recievers) {
+            reciever.action();
+        }
     }
 
 }

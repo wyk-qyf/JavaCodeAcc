@@ -4,9 +4,8 @@ import java.util.Random;
 
 /**
  * Util for String
- * 
- * @author liu yuning
  *
+ * @author liu yuning
  */
 public class StringUtil {
 
@@ -24,59 +23,58 @@ public class StringUtil {
     }
 
     /**
-     * 
      * @param str
      * @return {@code true} if the input {@code String} is null or ""
      */
     public static boolean empty(final String str) {
-	return str == null || str.trim().isEmpty();
+        return str == null || str.trim().isEmpty();
     }
 
     /**
      * generate random string
-     * 
+     *
      * @return a random string
      */
     public static String generateRandomString() {
-	return generateRandomString(DEFAULT_STRING_LENGTH);
+        return generateRandomString(DEFAULT_STRING_LENGTH);
     }
 
     /**
      * generate random string using all letters and the given length
-     * 
+     *
      * @param stringLength
      * @return a random string
      */
     public static String generateRandomString(int stringLength) {
-	if (stringLength <= 0) {
-	    stringLength = DEFAULT_STRING_LENGTH;
-	}
+        if (stringLength <= 0) {
+            stringLength = DEFAULT_STRING_LENGTH;
+        }
 
-	StringBuilder stringBuilder = new StringBuilder();
+        StringBuilder stringBuilder = new StringBuilder();
 
-	for (int i = 0; i < stringLength; i++) {
-	    stringBuilder
-		    .append(LETTERS.charAt(random.nextInt(LETTERS.length())));
-	}
+        for (int i = 0; i < stringLength; i++) {
+            stringBuilder
+                    .append(LETTERS.charAt(random.nextInt(LETTERS.length())));
+        }
 
-	return stringBuilder.toString();
+        return stringBuilder.toString();
     }
 
     /**
      * repeat a {@code String} called repeatStr for repeatNum times
-     * 
+     *
      * @param repeatStr
      * @param repeatNum
      * @return {@code String} repeatedString
      */
     public static String repeatableString(String repeatStr, int repeatNum) {
-	StringBuilder stringBuilder = new StringBuilder();
+        StringBuilder stringBuilder = new StringBuilder();
 
-	while (repeatNum-- > 0) {
-	    stringBuilder.append(repeatStr);
-	}
+        while (repeatNum-- > 0) {
+            stringBuilder.append(repeatStr);
+        }
 
-	return stringBuilder.toString();
+        return stringBuilder.toString();
     }
 
 }

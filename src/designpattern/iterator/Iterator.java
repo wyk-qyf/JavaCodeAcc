@@ -2,19 +2,18 @@ package designpattern.iterator;
 
 /**
  * 迭代器接口
- * 
- * @author liu yuning
  *
  * @param <T>
+ * @author liu yuning
  */
 public interface Iterator<T> {
 
-    public T first();
+    T first();
 
-    public T next();
+    T next();
 
-    public boolean isDone();
+    boolean isDone();
 
-    public T currentItem();
+    T currentItem();
 
 }
